@@ -1,0 +1,29 @@
+.hd-center__text {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  height: 80vh;
+
+  h1 {
+    color: $color__white;
+    width: 50%;
+  }
+  
+  p {
+   color: $color__white;
+   width: 35%;
+  }
+  
+  .hd-center__btn {
+    background: #fff;
+    border: transparent;
+    border-radius: 0;
+  
+    
+    &:hover {
+     background: #996515;
+     border-radius: 15px;
+     border: 2px solid salmon;
+    }
+  }
+}

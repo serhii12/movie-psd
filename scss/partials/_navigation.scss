@@ -1,0 +1,22 @@
+// NAVIGATION STYLES
+[aria-controls="menu-list"] {
+  display: none;
+}
+
+.navigation__menu {
+    display: flex;
+    justify-content: space-between;
+
+  .menu__link {
+    display: block;
+    color: $color__white;
+    padding: 0 20px;
+    border: transparent;
+    transition: all 1s;
+    
+    &:hover {
+      color: lighten($color__primary--black,15%);
+      border-bottom: 3px solid orange;
+    }
+  }
+}

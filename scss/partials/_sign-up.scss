@@ -1,0 +1,27 @@
+.sign-up {
+  display: grid;
+  grid-template-columns: 1fr minmax(270px,1170px) 1fr;
+  padding: 0 20px;
+  margin: 0 auto 50px;
+}
+
+.sign-up__heading {
+  grid-column: 2;
+  text-align: center;
+
+  h1 span {
+    color: $color__secondary--green;
+  }
+
+  .btn-sign {
+    width: 23rem;
+    border: transparent;
+    border-radius: 0;
+
+    &:hover {
+      border: 2px solid salmon;
+      border-radius: 15px;
+      background-color: lighten($color__secondary--blue, 25%);
+    }
+  }
+}

@@ -1,0 +1,31 @@
+.movies {
+  display: grid;
+  grid-gap: 20px;
+
+  .movies__heading {
+   justify-self: center;
+
+
+   .heading__btn {
+    width: 23rem;
+    border: transparent;
+    border-radius: 0;
+
+    &:hover {
+      border: 2px solid salmon;
+      border-radius: 15px;
+      background-color: lighten($color__secondary--blue, 25%);
+    }
+   }
+  }
+
+  .movies__gallery {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px,1fr));
+    grid-gap: 20px;
+    padding: 0 8.5rem;
+    & > img{
+      box-shadow: 0px 3px 5px 0px rgba(0,0,0,0.16);
+    }
+  }
+}

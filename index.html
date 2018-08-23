@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<title>Project 3 Movie</title>
+  <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,600,700,900" rel="stylesheet">
+  <link rel="stylesheet" href="css/main.css">
+</head>
+<body>
+  <!-- HEADER STARTS HERE -->
+  <header class="main-header">
+    <!-- HEADER-TOP STARTS HERE -->
+    <div class="main-header__top">
+      <!-- LOGO STARTS HERE -->
+      <div class="hd-top__logo">
+        <a href="#" class="logo">Movies.</a>
+      </div>
+      <!-- LOGO ENDS HERE -->
+
+      <!-- NAVIGATION STARTS HERE -->
+      <nav class="hd-top__navigation">
+        <button aria-expanded="false" aria-controls="menu-list">
+          <span class="open">☰</span>
+          <span class="close">×</span>
+          Menu
+        </button>
+        <ul class="navigation__menu">
+          <li class="menu__item">
+            <a href="#" class="menu__link">Features</a>
+          </li>
+          <li class="menu__item">
+            <a href="#" class="menu__link">Pricing</a>
+          </li>
+          <li class="menu__item">
+            <a href="#" class="menu__link">Sign Up / Log in</a>
+          </li>
+        </ul>
+      </nav>
+      <!-- NAVIGATION ENDS HERE -->
+    </div>
+    <!-- HEADER-TOP ENDS HERE -->
+
+    <!-- HEADER-CENTER STARTS HERE -->
+    <div class="main-header__center">
+      <div class="hd-center__text">
+        <h1>
+          Stream Any Movie at Anytime with No Individual Movie Cost or Rental Fees.
+        </h1>
+        <a href="#" class="btn hd-center__btn">Try it Free</a>
+        <p>
+          Thousand of movies with <strong>no rental fees.</strong> Our monthly plan gives you unlimited access to our movie library.
+        </p>
+        <p>
+          <strong>
+          Forget the theaters!</strong> Exclusive access to movies in theaters on release date.
+        </p>
+      </div>
+    </div>
+  
+    <img src="assets/ipad.png" alt="ipad" class="resposive-image__ipad">
+    
+    <img src="assets/iphone.png" alt="iphone" class="resposive-image__iphone">
+  
+  </header>
+  <!-- HEADER ENDS HERE -->
+
+  <!-- MAIN STARTS HERE -->
+  <main>
+		<!-- MOVIES SECTION STARTS HERE -->
+    <section class="movies">
+			<!-- MOVIES HEADING -->
+      <div class="movies__heading">
+        <h2>New 4K Movies</h2>
+        <a href="#" class="btn heading__btn">View More</a>
+			</div>
+			<!-- MOVIES GALLERY -->
+      <div class="movies__gallery">
+        <img src="assets/1.png" alt="Star Wars Solo movie">
+        <img src="assets/2.png" alt="Deadpool movie">
+        <img src="assets/3.png" alt="Ocean's 8">
+        <img src="assets/4.png" alt="Avengers infinity war">
+        <img src="assets/5.png" alt="Smurf">
+        <img src="assets/6.png" alt="Space Jam">
+        <img src="assets/7.png" alt="Ready Player one">
+        <img src="assets/8.png" alt="A Wrinkle in time">
+      </div>
+    </section>
+
+    <section class="sign-up">
+      <div class="sign-up__heading">
+        <h1>
+          Watch Your Favorite Movies and Explore Similar Titles. Get Started Today for <span>$5.99</span>/month.
+				</h1>
+				<a href="#" class="btn btn-sign">Try it Free</a>
+      </div>
+    </section>
+  </main>
+  <footer class="main-footer">
+		<!-- LOGO STARTS HERE -->
+		<div class="ft-top__logo">
+			<a href="#" class="logo">Movies.</a>
+		</div>
+		<!-- LOGO ENDS HERE -->
+
+			<!-- NAVIGATION STARTS HERE -->
+		<nav class="ft-top__navigation">
+			<ul class="ft-navigation__menu">
+				<li class="menu__item">
+					<a href="#">Account</a>
+				</li>
+				<li class="menu__item">
+					<a href="#">Help Center</a>
+				</li>
+				<li class="menu__item">
+					<a href="#">Terms</a>
+				</li>
+				<li class="menu__item">
+					<a href="#">Privacy</a>
+				</li>
+			</ul>
+		</nav>
+  </footer>
+  <script>
+
+    const navButton = document.querySelector('button[aria-expanded]');
+
+    function toggleNav({ target }) {
+      const expanded = target.getAttribute('aria-expanded') === 'true' || false;
+      navButton.setAttribute('aria-expanded', !expanded);
+    }
+
+    navButton.addEventListener('click', toggleNav);
+
+  </script>
+</body>
+</html>

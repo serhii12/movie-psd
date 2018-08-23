@@ -1,0 +1,105 @@
+@media only screen and (max-width:1509px) {
+  .movies .movies__gallery {
+    margin: 0;
+    padding: 0 1rem;
+  }
+}
+
+@media (max-width: 1200px) {
+  [aria-controls="menu-list"] {
+    display: block;
+  }
+
+  .hd-top__navigation .navigation__menu {
+    max-height: 0;
+    overflow: hidden;
+    transform: rotateX(90deg);
+    transition: all 0.5s;
+  }
+
+  [aria-expanded="true"] ~ .navigation__menu {
+    display: flex;
+    max-height: 500px;
+    transform: rotateX(0);
+  }
+
+  [aria-expanded="false"] .close {
+    display: none;
+  }
+
+  [aria-expanded="true"] .close {
+    display: inline-block;
+  }
+
+  [aria-expanded="true"] .open {
+    display: none;
+  }
+  
+  .menu__link:hover {
+    background: $color__white;
+  }
+
+  .main-header .resposive-image__ipad {
+    display: none;
+  }
+
+  .main-header .resposive-image__iphone {
+    display: block;
+  }
+}
+
+@media only screen and (max-width:900px) {
+  .hd-top__navigation {
+   margin-left: auto;
+  }
+
+  .navigation__menu {
+    display: flex;
+    flex-direction: column;
+
+    .menu__link {
+      background: $color__secondary--green;
+    }
+  } 
+
+  .hd-top__logo {
+    display: none;
+  }
+
+  .hd-center__text h1 {
+    @include fontSize(36);
+    width: 100%;
+  }
+  .main-header .resposive-image__iphone {
+    display: none;
+  }
+}
+
+@media only screen and (max-width:550px) {
+  .hd-center__text { 
+    height: 50vh;
+
+    h1 {
+      @include fontSize(26);
+      width: 100%;
+      margin-top: 15rem;
+    }
+
+    p {
+      @include fontSize(16);
+      float: right;
+      width: 86%;
+    }
+  }
+
+  .main-footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .ft-navigation__menu {
+    display: flex;
+    flex-direction: column;
+  }
+}

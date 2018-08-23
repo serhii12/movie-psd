@@ -1,0 +1,15 @@
+{
+  "name": "serhii_panchyshyn_project_3",
+  "version": "1.0.0",
+  "description": "Project_3 Restaurant",
+  "main": "index.js",
+  "scripts": {
+    "sass": "node-sass -w scss/ -o css/ --recursive"
+  },
+  "author": "Serhii Panchyshyn",
+  "license": "ISC",
+  "devDependencies": {
+    "browser-sync": "^2.24.6",
+    "node-sass": "^4.9.3"
+  }
+}

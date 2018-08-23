@@ -1,0 +1,31 @@
+body {
+  font-size: $base__font-size;
+  font-family: $base__font-family;
+  line-height: $base__line;
+  font-weight: $base__weight;
+}
+
+h1,
+h2 {
+  font-weight: 700;
+  color: $color__primary--black;
+}
+
+h1 {
+  @include fontSize(48);
+}
+
+h2 {
+  @include fontSize(36);
+}
+
+p, 
+li {
+  @include fontSize(16);
+  color: $color__primary--black;
+}
+
+a {
+  color: $color__white;
+  text-decoration: none;
+}
